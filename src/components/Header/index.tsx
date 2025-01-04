@@ -1,5 +1,6 @@
 "use client";
-import { Button, Flex, Heading, Text, keyframes } from "@chakra-ui/react";
+import { Button, Flex, Heading, Text } from "@chakra-ui/react";
+import { keyframes } from "@emotion/react";
 import { AnimatePresence, motion } from "framer-motion";
 import React, { useEffect, useState } from "react";
 import HeroBottomSVG from "./HeroBottomSVG";
