@@ -17,25 +17,30 @@ const words = [
   "Creator",
 ];
 
+const MotionFlex = motion.create(Flex);
+const MotionHeading = motion.create(Heading);
+
 const Header = () => {
   const [currentWord, setCurrentWord] = useState<string>(words[0]);
   const [index, setIndex] = useState(0);
 
   useEffect(() => {
-    setCurrentWord(words[index]);
     const interval = setInterval(() => {
       setIndex((prevIndex) => (prevIndex + 1) % words.length);
-      setCurrentWord(words[index]);
     }, 2000);
 
     return () => clearInterval(interval);
+  }, []);
+
+  useEffect(() => {
+    setCurrentWord(words[index]);
   }, [index]);
 
   return (
-    <Flex
-      as={motion.div}
-      initial="initial"
-      animate="animate"
+    <MotionFlex
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1 }}
       minH="100svh"
       bg={
         "linear-gradient(120deg,#70A4D4 0%,#ca71ff 20%,#8469cc 30%,#48B9E6 50%,#8469cc 70%,#9F70D4 100%)"
@@ -66,8 +71,7 @@ const Header = () => {
         Your Ultimate
       </Heading>
       <AnimatePresence mode="wait">
-        <Heading
-          as={motion.h1}
+        <MotionHeading
           fontSize={{
             base: 48,
             md: 64,
@@ -81,36 +85,36 @@ const Header = () => {
           exit={{ opacity: 0.2, filter: "blur(4px)" }}
         >
           {currentWord}
-        </Heading>
+        </MotionHeading>
       </AnimatePresence>
       <Text color={StargateColors.white} maxW={300} textAlign={"center"} mt={5}>
         Elevating AI: The Ultimate Platform for Intelligent Solutions
       </Text>
-      <Button
-        leftIcon={<LuZap />}
-        as={motion.a}
-        href={"#"}
-        whileHover={{ scale: 1.1 }}
-        size={"lg"}
-        mt={5}
-        gap={2}
-        cursor={"pointer"}
-      >
-        START FOR FREE
-      </Button>
-      <Text
-        mt={2}
-        as={Link}
-        href={"#features"}
-        color={StargateColors.white}
-        opacity={0.75}
-        transition={"all .25s ease"}
-        _hover={{ opacity: 1 }}
-      >
-        Discover Stargate
-      </Text>
+      <motion.a href={"#"} whileHover={{ scale: 1.1 }}>
+        <Button
+      size={"lg"}
+          mt={5}
+          gap={2}
+          cursor={"pointer"}
+        >
+            <LuZap />
+
+          START FOR FREE
+        </Button>
+      </motion.a>
+      <Link href={"#features"} passHref>
+        <Text
+          mt={2}
+          color={StargateColors.white}
+          opacity={0.75}
+          transition={"all .25s ease"}
+          _hover={{ opacity: 1 }}
+        >
+          Discover Stargate
+        </Text>
+      </Link>
       <HeroBottomSVG />
-    </Flex>
+    </MotionFlex>
   );
 };
 
