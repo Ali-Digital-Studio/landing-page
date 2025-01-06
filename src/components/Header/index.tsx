@@ -38,7 +38,7 @@ const Header = () => {
       animate="animate"
       minH="100svh"
       bg={
-        "linear-gradient(120deg,#70A4D4 0%,#ca71ff 20%,#8469cc 30%,#48B9E6 50%,#8469cc 70%,#9F70D4 100%)"
+        "linear-gradient(120deg,#70A4D4 0%,#0A41BB 20%,#1D71BB 30%,#48B9E6 50%,#1D71BB 70%,#1DA3BB 100%)"
       }
       bgSize={"200% 200%"}
       animation={`${bgAnimation} 20s ease-in-out alternate infinite`}

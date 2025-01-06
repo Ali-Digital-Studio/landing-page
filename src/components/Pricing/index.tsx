@@ -101,7 +101,7 @@ const Pricing = () => {
           borderRadius={12}
           transition={"all 0.25s ease"}
           {...(currentBilling === "monthly" && {
-            bgColor: StargateColors.black,
+            bgColor: StargateColors.secondary,
           })}
         >
           <Text
@@ -110,7 +110,7 @@ const Pricing = () => {
             color={
               currentBilling === "monthly"
                 ? StargateColors.white
-                : StargateColors.grey
+                : StargateColors.headingTextColor
             }
           >
             Monthly
@@ -128,7 +128,7 @@ const Pricing = () => {
           borderRadius={12}
           transition={"all 0.25s ease"}
           {...(currentBilling === "annual" && {
-            bgColor: StargateColors.black,
+            bgColor: StargateColors.secondary,
           })}
         >
           <Text
@@ -137,7 +137,7 @@ const Pricing = () => {
             color={
               currentBilling === "annual"
                 ? StargateColors.white
-                : StargateColors.grey
+                : StargateColors.headingTextColor
             }
           >
             Annual
@@ -176,7 +176,7 @@ const Pricing = () => {
               w={"100%"}
               border={`1px solid ${StargateColors.lightBg}`}
               borderRadius={18}
-              color={StargateColors.black}
+              color={StargateColors.headingTextColor}
               layout
               initial={{ opacity: 0.2 }}
               animate={{ opacity: 1 }}
@@ -188,7 +188,7 @@ const Pricing = () => {
                 fontSize="sm"
                 textAlign="center"
                 mb={4}
-                color={StargateColors.grey}
+                color={StargateColors.headingTextColor}
               >
                 {plan.name}
               </Text>

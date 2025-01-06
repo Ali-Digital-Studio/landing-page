@@ -38,7 +38,7 @@ const Product = () => {
       border={`1px solid ${StargateColors.lightBg}`}
       borderRadius={24}
     >
-      <Heading textAlign={"center"} px={2}>
+      <Heading textAlign={"center"} color={StargateColors.headingTextColor} px={2}>
         ... But what can Stargate do for You?
       </Heading>
       <Flex
@@ -74,7 +74,7 @@ const Product = () => {
             transition={"all 0.25s ease"}
             {...(currentCategory === category.toLowerCase()
               ? {
-                  bgColor: StargateColors.black,
+                  bgColor: StargateColors.secondary,
                   shadow: "lg",
                 }
               : {})}
@@ -86,7 +86,7 @@ const Product = () => {
               color={
                 currentCategory === category.toLowerCase()
                   ? StargateColors.white
-                  : StargateColors.grey
+                  : StargateColors.headingTextColor
               }
             >
               {category}
