@@ -1,3 +1,4 @@
+import { StargateColors } from "#/src/utils/Colors";
 import { Box, Flex, Grid, Heading, Text } from "@chakra-ui/react";
 import React, { ReactNode } from "react";
 
@@ -20,6 +21,7 @@ const Audience = () => {
         }}
         textAlign={"center"}
         mb={10}
+        color={StargateColors.headingTextColor}
       >
         We recommend Stargate for
       </Heading>
@@ -48,6 +50,7 @@ const Audience = () => {
         }}
         textAlign={"center"}
         mt={10}
+        color={StargateColors.headingTextColor}
       >
         and many others.
       </Heading>

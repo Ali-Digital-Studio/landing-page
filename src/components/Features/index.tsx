@@ -28,8 +28,10 @@ const Features = () => {
         fontSize={{
           base: 32,
           md: 48,
+
         }}
         textAlign={"center"}
+        color={StargateColors.headingTextColor}
       >
         Your Favourite AI Tool
       </Heading>
@@ -70,15 +72,15 @@ const Card = ({ icon, title, children }: CardProps) => (
       strokeWidth={1.5}
       transition={"all 0.25s ease"}
       _groupHover={{
-        bg: StargateColors.black,
+        bg: StargateColors.secondary,
         color: StargateColors.white,
         shadow: "dark-lg",
         transform: "scale(1.1)",
       }}
     />
     <Flex direction={"column"} gap={1}>
-      <Heading fontSize={"xl"}>{title}</Heading>
-      <Text fontSize={"small"} color={StargateColors.grey}>
+      <Heading fontSize={"xl"} color={StargateColors.headingTextColor}>{title}</Heading>
+      <Text fontSize={"small"} color={StargateColors.textColor}>
         {children}
       </Text>
     </Flex>

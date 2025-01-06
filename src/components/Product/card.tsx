@@ -21,14 +21,14 @@ export const ProductCard = ({ icon, title, children }: CardProps) => (
       strokeWidth={1.5}
       transition={"all 0.25s ease"}
       _groupHover={{
-        bg: StargateColors.black,
+        bg: StargateColors.secondary,
         color: StargateColors.white,
         shadow: "lg",
         transform: "scale(1.1)",
       }}
     />
-    <Heading fontSize={"xl"}>{title}</Heading>
-    <Text fontSize={"small"} color={StargateColors.grey}>
+    <Heading fontSize={"xl"} color={StargateColors.headingTextColor}>{title}</Heading>
+    <Text fontSize={"small"} color={StargateColors.textColor}>
       {children}
     </Text>
   </Flex>
