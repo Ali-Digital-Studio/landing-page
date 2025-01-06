@@ -1,7 +1,7 @@
 import { Grid } from "@chakra-ui/react";
 import React from "react";
 import { ProductCard } from "../card";
-import { LuBarChart, LuInstagram, LuMegaphone } from "react-icons/lu";
+import { LuChartBar, LuInstagram, LuMegaphone } from "react-icons/lu";
 
 const Marketing = () => {
   return (
@@ -21,7 +21,7 @@ const Marketing = () => {
         marketing strategies.
       </ProductCard>
 
-      <ProductCard icon={LuBarChart} title={"Marketing Campaign Optimizer"}>
+      <ProductCard icon={LuChartBar} title={"Marketing Campaign Optimizer"}>
         Maximize your campaign's impact with our AI Marketing Campaign
         Optimizer. Utilize data-driven approaches to enhance reach and
         engagement.

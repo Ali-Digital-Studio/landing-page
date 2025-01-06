@@ -166,7 +166,7 @@ const Pricing = () => {
         w={"100%"}
         mt={6}
       >
-        <AnimatePresence mode="wait">
+        <AnimatePresence mode="sync">
           {plans.map((plan) => (
             <Flex
               as={motion.div}

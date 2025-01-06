@@ -1,6 +1,6 @@
 import { Grid } from "@chakra-ui/react";
 import React from "react";
-import { LuBarChartBig, LuPodcast, LuTrendingUp } from "react-icons/lu";
+import { LuChartBarBig, LuPodcast, LuTrendingUp } from "react-icons/lu";
 import { ProductCard } from "../card";
 
 const SocialMedia = () => {
@@ -26,7 +26,7 @@ const SocialMedia = () => {
         trends and optimize your posts for maximum interaction.
       </ProductCard>
 
-      <ProductCard icon={LuBarChartBig} title={"Audience Insight Analyzer"}>
+      <ProductCard icon={LuChartBarBig} title={"Audience Insight Analyzer"}>
         Gain deeper insights into your audience with our Audience Insight
         Analyzer. Understand preferences and behaviors to enhance your social
         media strategy.
