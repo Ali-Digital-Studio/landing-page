@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   description:
     "Ali Studio es una agencia digital que ofrece servicios de desarrollo web, diseño gráfico y gestión de redes sociales. Creamos experiencias digitales únicas para potenciar tu marca.",
   icons: [{ rel: "icon", url: favicon.src }],
-  metadataBase: new URL("https://stargate.nfteam.eu/"),
+  metadataBase: new URL("https://www.instagram.com/alistudiord/?hl=es"),
   openGraph: {
     title: "Ali Studio | Agencia Digital Creativa",
     siteName: "Ali Studio",
