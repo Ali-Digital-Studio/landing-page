@@ -1,7 +1,7 @@
 import { Grid } from "@chakra-ui/react";
 import React from "react";
 import { ProductCard } from "../card";
-import { LuPalette, LuPencilRuler, LuShapes } from "react-icons/lu";
+import { FaLightbulb, FaPaintBrush, FaBook } from "react-icons/fa"; // Nuevos íconos
 
 const Design = () => {
   return (
@@ -15,19 +15,21 @@ const Design = () => {
       gap={6}
       px={6}
     >
-      <ProductCard icon={LuPencilRuler} title={"UI/UX Design Assistant"}>
-        Streamline your design process with our UI/UX Design Assistant. Create
-        intuitive and aesthetically pleasing interfaces with ease.
+      <ProductCard icon={FaLightbulb} title={"Concepto y Estrategia"}>
+        Diseñamos una identidad para que refleje los valores y misión de tu marca,
+        analizando e investigando tu mercado y tu público objetivo, ofreciendo una
+        identidad alineada con las
       </ProductCard>
 
-      <ProductCard icon={LuPalette} title={"Color Scheme Generator"}>
-        Find the perfect color palette for your project with our Color Scheme
-        Generator. Generate harmonious and trendy color combinations instantly.
+      <ProductCard icon={FaPaintBrush} title={"Logotipos Originales"}>
+        Diseños impactantes y memorables que trasmiten la esencia de la marca, con
+        logotipos optimizados para múltiples plataformas.
       </ProductCard>
 
-      <ProductCard icon={LuShapes} title={"Layout Optimizer"}>
-        Optimize your layouts with our Layout Optimizer. Achieve the perfect
-        balance and composition for your designs automatically.
+      <ProductCard icon={FaBook} title={"Paleta de colores y Brandbook"}>
+        Colores que refuerzan la percepción de la marca, incluyendo un documento
+        que define cómo utilizar tu marca en todos los canales, asegurando su
+        consistencia.
       </ProductCard>
     </Grid>
   );
