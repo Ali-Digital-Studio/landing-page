@@ -9,13 +9,19 @@ import { LuZap } from "react-icons/lu";
 import Link from "next/link";
 
 const words = [
-  "Copywriter",
-  "Assistant",
-  "Marketer",
-  "Developer",
-  "Strategist",
-  "Creator",
+  "Identidad",
+  "Pagina Web",
+  "Branding",
+  "Diseño gráfico",
+  "Publicidad",
+  "Redes sociales",
+  "Desarrollo web",
+  "Posicionamiento",
+  "Marketing",
+  "UX/UI",
+  "Fotografía",
 ];
+
 
 const MotionFlex = motion.create(Flex);
 const MotionHeading = motion.create(Heading);
@@ -55,11 +61,12 @@ const Header = () => {
     >
       <Flex bg={"#ffffff50"} px={4} rounded={"full"} mb={5}>
         <Text color={StargateColors.white} fontSize={"xs"}>
-          Unleash The Power of AI
+          Da un salto a la modernidad con Ali Studio
         </Text>
       </Flex>
       <Heading
         fontSize={{
+          sm: 18,
           base: 48,
           md: 64,
           lg: 84,
@@ -68,11 +75,12 @@ const Header = () => {
         lineHeight={1}
         textAlign={"center"}
       >
-        Your Ultimate
+        Nos Encargamos de tu
       </Heading>
       <AnimatePresence mode="wait">
         <MotionHeading
           fontSize={{
+            sm:18,
             base: 48,
             md: 64,
             lg: 84,
@@ -88,18 +96,16 @@ const Header = () => {
         </MotionHeading>
       </AnimatePresence>
       <Text color={StargateColors.white} maxW={300} textAlign={"center"} mt={5}>
-        Elevating AI: The Ultimate Platform for Intelligent Solutions
+        Diseñamos soluciones visuales, paginas web y social media para que conectes con el mundo
       </Text>
-      <motion.a href={"#"} whileHover={{ scale: 1.1 }}>
+      <motion.a href={"#footer"} whileHover={{ scale: 1.1 }}>
         <Button
-      size={"lg"}
+          size={"lg"}
           mt={5}
           gap={2}
           cursor={"pointer"}
         >
-            <LuZap />
-
-          START FOR FREE
+          ¡Contáctanos!
         </Button>
       </motion.a>
       <Link href={"#features"} passHref>
@@ -110,7 +116,7 @@ const Header = () => {
           transition={"all .25s ease"}
           _hover={{ opacity: 1 }}
         >
-          Discover Stargate
+          Descubre Ali Studio
         </Text>
       </Link>
       <HeroBottomSVG />
