@@ -1,4 +1,5 @@
 "use client";
+
 import { Navigation, Scrollbar, A11y, Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Box, Heading } from "@chakra-ui/react";
@@ -12,9 +13,7 @@ import "swiper/css/scrollbar";
 
 export default function Clients() {
   return (
-    <Box
-      textAlign="center"
-    >
+    <Box textAlign="center" mt={-10}>
       <Heading
         fontSize={{
           base: 32,
@@ -22,7 +21,7 @@ export default function Clients() {
         }}
         textAlign={"center"}
         color={StargateColors.headingTextColor}
-        mb={12}
+        margin={20}
       >
         Nuestros clientes
       </Heading>
@@ -38,8 +37,16 @@ export default function Clients() {
           }}
           loop={true}
           autoplay={{
-            delay: 2500,
+            delay: 800,
             disableOnInteraction: false,
+          }}
+          onSwiper={(swiper) => {
+            swiper.el.addEventListener("mouseenter", () => {
+              swiper.autoplay.stop();
+            });
+            swiper.el.addEventListener("mouseleave", () => {
+              swiper.autoplay.start();
+            });
           }}
           style={{
             maxWidth: "1200px",
