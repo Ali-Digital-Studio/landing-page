@@ -1,7 +1,7 @@
 import { Grid } from "@chakra-ui/react";
 import React from "react";
-import { LuChartBarBig, LuPodcast, LuTrendingUp } from "react-icons/lu";
 import { ProductCard } from "../card";
+import { LuImage, LuTarget, LuCalendarDays } from "react-icons/lu";
 
 const SocialMedia = () => {
   return (
@@ -15,21 +15,20 @@ const SocialMedia = () => {
       gap={6}
       px={6}
     >
-      <ProductCard icon={LuPodcast} title={"Social Media Content Generator"}>
-        Create engaging content effortlessly with our Social Media Content
-        Generator. Tailor posts to your audience and maintain a consistent
-        online presence.
+      <ProductCard icon={LuImage} title={"Creación de contenido"}>
+        Creamos diseños visuales impactantes como post, historias y reels estructurados
+        para captar la atención y reflejar tu marca, con la más alta calidad.
       </ProductCard>
 
-      <ProductCard icon={LuTrendingUp} title={"Engagement Booster"}>
-        Boost your social media engagement with our Engagement Booster. Analyze
-        trends and optimize your posts for maximum interaction.
+      <ProductCard icon={LuTarget} title={"Estrategia de redes sociales"}>
+        Evaluamos tu audiencia, competencia y objetivos para crear un plan de acción con
+        publicaciones planificadas estratégicamente para mantener coherencia y relevancia.
       </ProductCard>
 
-      <ProductCard icon={LuChartBarBig} title={"Audience Insight Analyzer"}>
-        Gain deeper insights into your audience with our Audience Insight
-        Analyzer. Understand preferences and behaviors to enhance your social
-        media strategy.
+      <ProductCard icon={LuCalendarDays} title={"Gestión de redes sociales"}>
+        Cuidamos el día y la hora ideal para maximizar el alcance, con análisis continuo 
+        del contenido, creación de campañas personalizadas con una segmentación precisa para
+        llegar al público adecuado por medio de Facebook ADS y Google ADS.
       </ProductCard>
     </Grid>
   );

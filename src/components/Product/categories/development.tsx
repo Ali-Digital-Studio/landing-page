@@ -1,7 +1,7 @@
 import { Grid } from "@chakra-ui/react";
 import React from "react";
 import { ProductCard } from "../card";
-import { LuBug, LuCode, LuRocket } from "react-icons/lu";
+import { LuUserCheck, LuDices, LuWrench } from "react-icons/lu";
 
 const Development = () => {
   return (
@@ -15,19 +15,20 @@ const Development = () => {
       gap={6}
       px={6}
     >
-      <ProductCard icon={LuCode} title={"Code Efficiency Analyzer"}>
-        Enhance your code's performance with our Code Efficiency Analyzer.
-        Optimize for speed and resource usage in real-time.
+      <ProductCard icon={LuUserCheck} title={"Centrados en el usuario"}>
+        Interfaces atractivas orientadas a mejorar la experiencia de usuario
       </ProductCard>
 
-      <ProductCard icon={LuBug} title={"Automated Bug Detector"}>
-        Streamline debugging with our Automated Bug Detector. Identify and
-        resolve coding errors quickly and efficiently.
+      <ProductCard icon={LuDices} title={"Desarrollo Responsivo"}>
+        Páginas que se ven y funcionan desde cualquier dispositivo, con un 
+        diseño complementario que se centra en la experiencia de los usuarios
+        que navegan desde smartphones.
       </ProductCard>
 
-      <ProductCard icon={LuRocket} title={"Deployment Optimizer"}>
-        Simplify your deployment process with our Deployment Optimizer. Ensure
-        smooth, efficient, and error-free software deployment.
+      <ProductCard icon={LuWrench} title={"Mantenimiento y actualizaciones"}>
+        Aseguramos que tu página siempre esté actualizada y funcionando de forma 
+        perfecta, en caso de que necesites capacitación extra para administrar tu
+        sitio acá la encontrarás.
       </ProductCard>
     </Grid>
   );

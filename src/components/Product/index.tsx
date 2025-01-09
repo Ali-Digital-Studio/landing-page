@@ -2,17 +2,14 @@
 import { StargateColors } from "#/src/utils/Colors";
 import { Flex, Heading, Text } from "@chakra-ui/react";
 import React, { useState } from "react";
-import Copywriting from "./categories/copywriting";
 import Design from "./categories/design";
 import Development from "./categories/development";
-import Marketing from "./categories/marketing";
-import Video from "./categories/video";
 import SocialMedia from "./categories/socialMedia";
 import { AnimatePresence } from "framer-motion";
 import { motion } from "framer-motion";
 
 const Product = () => {
-  const [currentCategory, setCurrentCategory] = useState("copywriting");
+  const [currentCategory, setCurrentCategory] = useState("identidad visual");
 
   return (
     <Flex
@@ -39,7 +36,7 @@ const Product = () => {
       borderRadius={24}
     >
       <Heading textAlign={"center"} color={StargateColors.headingTextColor} px={2}>
-        ... But what can Stargate do for You?
+        Servicios
       </Heading>
       <Flex
         gap={4}
@@ -116,20 +113,14 @@ const Product = () => {
 };
 
 const categoryComponents = {
-  copywriting: Copywriting,
-  design: Design,
-  development: Development,
-  marketing: Marketing,
-  video: Video,
+  "identidad visual": Design,
+  "páginas web": Development,
   "social media": SocialMedia,
 };
 
 const Categories = [
-  "Copywriting",
-  "Design",
-  "Development",
-  "Marketing",
-  "Video",
+  "Identidad Visual",
+  "Páginas web",
   "Social Media",
 ];
 
