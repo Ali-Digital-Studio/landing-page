@@ -10,9 +10,7 @@ import Link from "next/link";
 
 const words = [
   "Identidad",
-  "Contenido",
   "Pagina Web",
-  "Tienda en línea",
   "Branding",
   "Diseño gráfico",
   "Publicidad",
