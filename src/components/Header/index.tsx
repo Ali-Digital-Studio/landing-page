@@ -18,9 +18,6 @@ const words = [
   "Desarrollo web",
   "Posicionamiento",
   "Marketing",
-  "Creatividad",
-  "Innovación",
-  "Transformación",
   "UX/UI",
   "Fotografía",
 ];
