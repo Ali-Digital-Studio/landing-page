@@ -1,7 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import type { ReactNode } from "react";
 import { Providers } from "#/src/components/Providers";
-import favicon from "#/public/images/favicon.png";
+import favicon from "#/public/images/Logo.svg";
 import SummaryLargeImage from "#/public/images/summary_large_image.png";
 import Cookie from "../components/Cookie";
 import Banner from "../components/Banner";
@@ -23,54 +23,54 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   title: {
-    template: "Stargate | %s",
-    default: "Stargate | NextJS SaaS Landing",
+    template: "Ali Studio | %s",
+    default: "Ali Studio | Agencia Digital Creativa",
   },
   description:
-    "Stargate is a modern SaaS Landing Page template built with NextJS. It's designed to provide a seamless and engaging experience for showcasing software products, especially those in the tech and startup niches.",
+    "Ali Studio es una agencia digital que ofrece servicios de desarrollo web, diseño gráfico y gestión de redes sociales. Creamos experiencias digitales únicas para potenciar tu marca.",
   icons: [{ rel: "icon", url: favicon.src }],
-  metadataBase: new URL("https://stargate.nfteam.eu/"),
+  metadataBase: new URL("https://www.instagram.com/alistudiord/?hl=es"),
   openGraph: {
-    title: "Stargate | NextJS SaaS Landing",
-    siteName: "Stargate | NextJS SaaS Landing",
+    title: "Ali Studio | Agencia Digital Creativa",
+    siteName: "Ali Studio",
     description:
-      "Stargate is a modern SaaS Landing Page template built with NextJS. It's designed to provide a seamless and engaging experience for showcasing software products, especially those in the tech and startup niches.",
-    url: "https://stargate.nfteam.eu/",
+      "Ali Studio ofrece soluciones creativas en desarrollo web, diseño gráfico y social media. Transformamos ideas en experiencias digitales impactantes.",
+    url: "",
     type: "website",
-    locale: "hu_HU",
+    locale: "es_ES",
     images: [
       {
         url: SummaryLargeImage.src,
         width: SummaryLargeImage.width,
         height: SummaryLargeImage.height,
-        alt: "Stargate | NextJS SaaS Landing",
+        alt: "Ali Studio | Agencia Digital Creativa",
       },
     ],
   },
   twitter: {
-    title: "Stargate | NextJS SaaS Landing",
-    creator: "@nfteam_eu",
-    site: "@nfteam_eu",
+    title: "Ali Studio | Agencia Digital Creativa",
+    creator: "",
+    site: "",
     description:
-      "Stargate is a modern SaaS Landing Page template built with NextJS. It's designed to provide a seamless and engaging experience for showcasing software products, especially those in the tech and startup niches.",
+      "Ali Studio es una agencia digital especializada en desarrollo web, diseño gráfico y gestión de redes sociales. Damos vida a tus ideas.",
     card: "summary_large_image",
     images: [
       {
         url: SummaryLargeImage.src,
         width: SummaryLargeImage.width,
         height: SummaryLargeImage.height,
-        alt: "Stargate | NextJS SaaS Landing",
+        alt: "Ali Studio | Agencia Digital Creativa",
       },
     ],
   },
   alternates: {
-    canonical: "https://stargate.nfteam.eu/",
+    canonical: "",
   },
 };
 
 export default function RootLayout({ children }: LayoutProps) {
   return (
-    <html lang="en">
+    <html lang="es">
       <body>
         <Providers>
           <Cookie />
