@@ -15,11 +15,13 @@ import { LuMenu, LuX } from "react-icons/lu";
 import { color, motion } from "framer-motion";
 import { StargateColors } from "#/src/utils/Colors";
 import useBannerVisibility from "#/src/utils/BannerVisibility";
+import favicon from "#/public/images/Logo.svg";
+import Image from "next/image";
 
 const NavItems = [
-  { name: "Features", href: "/#features" },
-  { name: "Product", href: "/#product" },
-  { name: "Pricing", href: "/#pricing" },
+  { name: "Servicios", href: "/#product" },
+  { name: "Clientes", href: "/#clientes" },
+  { name: "Portafolio", href: "/#portafolio" },
 ];
 
 const Navbar: FC = () => {
@@ -91,7 +93,7 @@ const Navbar: FC = () => {
             color={isScrolled ? StargateColors.headingTextColor : "white"}
             fontWeight={600}
           >
-            Stargate
+            <Image src={favicon.src} alt="Ali Studio"  width={50} height={50}/>
           </Text>
           <Flex
             gap={5}
@@ -120,23 +122,6 @@ const Navbar: FC = () => {
                 <Text>{item.name}</Text>
               </Flex>
             ))}
-          </Flex>
-
-          <Flex gap={4} display={{ base: "none", lg: "flex" }}>
-            <Button variant="link" color={isScrolled ? StargateColors.headingTextColor : StargateColors.white}>
-              Log in
-            </Button>
-            <Button
-              as={motion.a}
-              whileHover={{ scale: 1.1 }}
-              href="#footer"
-              rounded="full"
-              background={isScrolled ? StargateColors.primary : "white"}
-              color={isScrolled ? StargateColors.white : StargateColors.headingTextColor}
-              _hover={{ bg: isScrolled ? StargateColors.primary : "white" }}
-            >
-              Start for free
-            </Button>
           </Flex>
 
           <IconButton
@@ -171,21 +156,6 @@ const Navbar: FC = () => {
                 <Text>{item.name}</Text>
               </Flex>
             ))}
-            <Flex gap={5} mt={5}>
-              <Button variant="link" color={isScrolled ? "black" : "white"}>
-                Log in
-              </Button>
-              <Button
-                as={motion.a}
-                whileHover={{ scale: 1.1 }}
-                href="#"
-                rounded="full"
-                background={isScrolled ? StargateColors.primary : "white"}
-                color={isScrolled ? "white" : "black"}
-              >
-                Start for free
-              </Button>
-            </Flex>
           </Flex>
         </Collapse>
       </Flex>
