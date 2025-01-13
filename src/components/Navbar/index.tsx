@@ -12,11 +12,9 @@ import {
   useDisclosure,
 } from "@chakra-ui/react";
 import { LuMenu, LuX } from "react-icons/lu";
-import { color, motion } from "framer-motion";
 import { StargateColors } from "#/src/utils/Colors";
 import useBannerVisibility from "#/src/utils/BannerVisibility";
-import favicon from "#/public/images/Logo.svg";
-import Image from "next/image";
+
 
 const NavItems = [
   { name: "Servicios", href: "/#product" },
