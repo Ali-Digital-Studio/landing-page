@@ -4,8 +4,7 @@ import { keyframes } from "@emotion/react";
 import { AnimatePresence, motion } from "framer-motion";
 import React, { useEffect, useState } from "react";
 import HeroBottomSVG from "./HeroBottomSVG";
-import { StargateColors } from "#/src/utils/Colors";
-import { LuZap } from "react-icons/lu";
+import { AliStudioColors } from "#/src/utils/Colors";
 import Link from "next/link";
 
 const words = [
@@ -60,7 +59,7 @@ const Header = () => {
       px={2}
     >
       <Flex bg={"#ffffff50"} px={4} rounded={"full"} mb={5}>
-        <Text color={StargateColors.white} fontSize={"xs"}>
+        <Text color={AliStudioColors.white} fontSize={"xs"}>
           Da un salto a la modernidad con Ali Studio
         </Text>
       </Flex>
@@ -71,7 +70,7 @@ const Header = () => {
           md: 64,
           lg: 84,
         }}
-        color={StargateColors.white}
+        color={AliStudioColors.white}
         lineHeight={1}
         textAlign={"center"}
       >
@@ -86,7 +85,7 @@ const Header = () => {
             lg: 84,
           }}
           key={currentWord}
-          color={StargateColors.white}
+          color={AliStudioColors.white}
           lineHeight={1}
           initial={{ opacity: 0.2, filter: "blur(4px)" }}
           animate={{ opacity: 1, filter: "blur(0px)" }}
@@ -95,7 +94,7 @@ const Header = () => {
           {currentWord}
         </MotionHeading>
       </AnimatePresence>
-      <Text color={StargateColors.white} maxW={300} textAlign={"center"} mt={5}>
+      <Text color={AliStudioColors.white} maxW={300} textAlign={"center"} mt={5}>
         Diseñamos soluciones visuales, paginas web y social media para que conectes con el mundo
       </Text>
       <motion.a href={"#footer"} whileHover={{ scale: 1.1 }}>
@@ -111,7 +110,7 @@ const Header = () => {
       <Link href={"#features"} passHref>
         <Text
           mt={2}
-          color={StargateColors.white}
+          color={AliStudioColors.white}
           opacity={0.75}
           transition={"all .25s ease"}
           _hover={{ opacity: 1 }}

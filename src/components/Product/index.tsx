@@ -1,5 +1,5 @@
 "use client";
-import { StargateColors } from "#/src/utils/Colors";
+import { AliStudioColors } from "#/src/utils/Colors";
 import { Flex, Heading, Text } from "@chakra-ui/react";
 import React, { useState } from "react";
 import Design from "./categories/design";
@@ -32,10 +32,10 @@ const Product = () => {
         base: 2,
         xl: "auto",
       }}
-      border={`1px solid ${StargateColors.lightBg}`}
+      border={`1px solid ${AliStudioColors.lightBg}`}
       borderRadius={24}
     >
-      <Heading textAlign={"center"} color={StargateColors.headingTextColor} px={2}>
+      <Heading textAlign={"center"} color={AliStudioColors.headingTextColor} px={2}>
         Servicios
       </Heading>
       <Flex
@@ -47,7 +47,7 @@ const Product = () => {
         px={4}
         mt={5}
         borderBottom={{
-          base: `1px solid ${StargateColors.lightBg}`,
+          base: `1px solid ${AliStudioColors.lightBg}`,
           md: "none",
         }}
         justify={{
@@ -71,7 +71,7 @@ const Product = () => {
             transition={"all 0.25s ease"}
             {...(currentCategory === category.toLowerCase()
               ? {
-                  bgColor: StargateColors.secondary,
+                  bgColor: AliStudioColors.secondary,
                   shadow: "lg",
                 }
               : {})}
@@ -82,8 +82,8 @@ const Product = () => {
               whiteSpace={"nowrap"}
               color={
                 currentCategory === category.toLowerCase()
-                  ? StargateColors.white
-                  : StargateColors.headingTextColor
+                  ? AliStudioColors.white
+                  : AliStudioColors.headingTextColor
               }
             >
               {category}

@@ -1,4 +1,4 @@
-export const StargateColors = {
+export const AliStudioColors = {
   primary: "#1DA3BB",
   secondary: "#1D71BB",
   tertiary: "#0A41BB",

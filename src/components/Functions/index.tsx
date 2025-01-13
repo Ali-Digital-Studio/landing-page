@@ -1,5 +1,5 @@
-import { StargateColors } from "#/src/utils/Colors";
-import { Flex, Grid, GridItem, Heading } from "@chakra-ui/react";
+import { AliStudioColors } from "#/src/utils/Colors";
+import { Flex, Grid, GridItem } from "@chakra-ui/react";
 import React from "react";
 
 const Functions = () => {
@@ -46,7 +46,7 @@ const Functions = () => {
           rowSpan={1}
           {...GridItemStyles}
           bgImage={"url(https://i.imgur.com/M7zriZy.png)"}
-          bgColor={StargateColors.lightGrey}
+          bgColor={AliStudioColors.lightGrey}
           bgSize={"contain"}
           bgRepeat={"no-repeat"}
           bgPosition={"center"}
@@ -101,7 +101,7 @@ const Functions = () => {
           bgSize={"contain"}
           bgRepeat={"no-repeat"}
           bgPosition={"center"}
-          bgColor={StargateColors.lightGrey}
+          bgColor={AliStudioColors.lightGrey}
         ></GridItem>
       </Grid>
     </Flex>

@@ -1,5 +1,5 @@
 "use client";
-import { StargateColors } from "#/src/utils/Colors";
+import { AliStudioColors } from "#/src/utils/Colors";
 import { Flex, Grid, Heading, Icon, Text } from "@chakra-ui/react";
 import React, { ReactNode } from "react";
 import { IconType } from "react-icons";
@@ -31,7 +31,7 @@ const Features = () => {
 
         }}
         textAlign={"center"}
-        color={StargateColors.headingTextColor}
+        color={AliStudioColors.headingTextColor}
       >
         Your Favourite AI Tool
       </Heading>
@@ -67,20 +67,20 @@ const Card = ({ icon, title, children }: CardProps) => (
       fontSize={48}
       mr={5}
       p={2}
-      bg={StargateColors.lightGrey}
+      bg={AliStudioColors.lightGrey}
       rounded={"md"}
       strokeWidth={1.5}
       transition={"all 0.25s ease"}
       _groupHover={{
-        bg: StargateColors.secondary,
-        color: StargateColors.white,
+        bg: AliStudioColors.secondary,
+        color: AliStudioColors.white,
         shadow: "dark-lg",
         transform: "scale(1.1)",
       }}
     />
     <Flex direction={"column"} gap={1}>
-      <Heading fontSize={"xl"} color={StargateColors.headingTextColor}>{title}</Heading>
-      <Text fontSize={"small"} color={StargateColors.textColor}>
+      <Heading fontSize={"xl"} color={AliStudioColors.headingTextColor}>{title}</Heading>
+      <Text fontSize={"small"} color={AliStudioColors.textColor}>
         {children}
       </Text>
     </Flex>

@@ -12,8 +12,8 @@ import {
   useDisclosure,
 } from "@chakra-ui/react";
 import { LuMenu, LuX } from "react-icons/lu";
-import { color, motion } from "framer-motion";
-import { StargateColors } from "#/src/utils/Colors";
+import {  motion } from "framer-motion";
+import { AliStudioColors } from "#/src/utils/Colors";
 import useBannerVisibility from "#/src/utils/BannerVisibility";
 
 const NavItems = [
@@ -24,7 +24,7 @@ const NavItems = [
 
 const Navbar: FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
-  const [showBanner] = useBannerVisibility("stargate-banner");
+  const [showBanner] = useBannerVisibility("ali-banner");
   const [activeSection, setActiveSection] = useState("");
   const { isOpen, onToggle } = useDisclosure();
 
@@ -88,7 +88,7 @@ const Navbar: FC = () => {
             href="/"
             fontSize="3xl"
             userSelect="none"
-            color={isScrolled ? StargateColors.headingTextColor : "white"}
+            color={isScrolled ? AliStudioColors.headingTextColor : "white"}
             fontWeight={600}
           >
             Stargate
@@ -107,12 +107,12 @@ const Navbar: FC = () => {
                 py={2}
                 borderRadius={12}
                 transition="all .25s ease"
-                color={isScrolled ? StargateColors.headingTextColor : StargateColors.white}
-                _hover={{ bg: isScrolled ? StargateColors.primary : "#ffffff25", color: isScrolled ? StargateColors.white : ""}}
+                color={isScrolled ? AliStudioColors.headingTextColor : AliStudioColors.white}
+                _hover={{ bg: isScrolled ? AliStudioColors.primary : "#ffffff25", color: isScrolled ? AliStudioColors.white : ""}}
                 bg={
                   activeSection === item.name.toLowerCase()
                     ? isScrolled
-                      ? StargateColors.white
+                      ? AliStudioColors.white
                       : "#ffffff25"
                     : "transparent"
                 }
@@ -123,7 +123,7 @@ const Navbar: FC = () => {
           </Flex>
 
           <Flex gap={4} display={{ base: "none", lg: "flex" }}>
-            <Button variant="link" color={isScrolled ? StargateColors.headingTextColor : StargateColors.white}>
+            <Button variant="link" color={isScrolled ? AliStudioColors.headingTextColor : AliStudioColors.white}>
               Log in
             </Button>
             <Button
@@ -131,9 +131,9 @@ const Navbar: FC = () => {
               whileHover={{ scale: 1.1 }}
               href="#footer"
               rounded="full"
-              background={isScrolled ? StargateColors.primary : "white"}
-              color={isScrolled ? StargateColors.white : StargateColors.headingTextColor}
-              _hover={{ bg: isScrolled ? StargateColors.primary : "white" }}
+              background={isScrolled ? AliStudioColors.primary : "white"}
+              color={isScrolled ? AliStudioColors.white : AliStudioColors.headingTextColor}
+              _hover={{ bg: isScrolled ? AliStudioColors.primary : "white" }}
             >
               Start for free
             </Button>
@@ -180,7 +180,7 @@ const Navbar: FC = () => {
                 whileHover={{ scale: 1.1 }}
                 href="#"
                 rounded="full"
-                background={isScrolled ? StargateColors.primary : "white"}
+                background={isScrolled ? AliStudioColors.primary : "white"}
                 color={isScrolled ? "white" : "black"}
               >
                 Start for free

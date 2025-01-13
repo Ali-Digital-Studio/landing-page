@@ -1,4 +1,4 @@
-import { StargateColors } from "#/src/utils/Colors";
+import { AliStudioColors } from "#/src/utils/Colors";
 import { Flex, Heading, Icon, Text } from "@chakra-ui/react";
 import type { ReactNode } from "react";
 import type { IconType } from "react-icons";
@@ -16,19 +16,19 @@ export const ProductCard = ({ icon, title, children }: CardProps) => (
       fontSize={48}
       mr={5}
       p={2}
-      bg={StargateColors.lightGrey}
+      bg={AliStudioColors.lightGrey}
       rounded={"md"}
       strokeWidth={1.5}
       transition={"all 0.25s ease"}
       _groupHover={{
-        bg: StargateColors.secondary,
-        color: StargateColors.white,
+        bg: AliStudioColors.secondary,
+        color: AliStudioColors.white,
         shadow: "lg",
         transform: "scale(1.1)",
       }}
     />
-    <Heading fontSize={"xl"} color={StargateColors.headingTextColor}>{title}</Heading>
-    <Text fontSize={"small"} color={StargateColors.textColor}>
+    <Heading fontSize={"xl"} color={AliStudioColors.headingTextColor}>{title}</Heading>
+    <Text fontSize={"small"} color={AliStudioColors.textColor}>
       {children}
     </Text>
   </Flex>

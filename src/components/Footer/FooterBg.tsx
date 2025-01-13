@@ -1,9 +1,9 @@
-import { StargateColors } from "#/src/utils/Colors";
+import { AliStudioColors } from "#/src/utils/Colors";
 import { Box } from "@chakra-ui/react";
 import React from "react";
 
 const FooterBg = () => {
-  const baseStyle = `${StargateColors.primary},${StargateColors.secondary}75, transparent, transparent, transparent`;
+  const baseStyle = `${AliStudioColors.primary},${AliStudioColors.secondary}75, transparent, transparent, transparent`;
 
   return (
     <Box
