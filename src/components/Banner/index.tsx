@@ -17,26 +17,21 @@ const Banner = () => {
       align={"center"}
     >
       <Text
-        fontSize={{
-          base: "md",
-          md: "lg",
-        }}
+        fontSize={{ base: "sm", md: "md" }}
         color={AliStudioColors.white}
         fontWeight={700}
-        mr={4}
+        mr={2}
       >
-        SALE
+        ¡Haz brillar tu marca!
       </Text>
       <Text
-        fontSize={{
-          base: "xs",
-          md: "sm",
-        }}
+        fontSize={{ base: "xs", md: "sm" }}
         color={AliStudioColors.white}
       >
-        Register and get 20% discount on checkout
+        Diseño que impacta, webs que inspiran...
       </Text>
       <Icon
+
         as={LuX}
         color={AliStudioColors.white}
         fontSize={"lg"}
