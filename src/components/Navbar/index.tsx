@@ -12,7 +12,7 @@ import {
   useDisclosure,
 } from "@chakra-ui/react";
 import { LuMenu, LuX } from "react-icons/lu";
-import { StargateColors } from "#/src/utils/Colors";
+import { AliStudioColors } from "#/src/utils/Colors";
 import useBannerVisibility from "#/src/utils/BannerVisibility";
 
 
@@ -24,7 +24,7 @@ const NavItems = [
 
 const Navbar: FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
-  const [showBanner] = useBannerVisibility("stargate-banner");
+  const [showBanner] = useBannerVisibility("ali-banner");
   const [activeSection, setActiveSection] = useState("");
   const { isOpen, onToggle } = useDisclosure();
 
@@ -114,12 +114,12 @@ const Navbar: FC = () => {
                 py={2}
                 borderRadius={12}
                 transition="all .25s ease"
-                color={isScrolled ? StargateColors.headingTextColor : StargateColors.white}
-                _hover={{ bg: isScrolled ? StargateColors.primary : "#ffffff25", color: isScrolled ? StargateColors.white : "" }}
+                color={isScrolled ? AliStudioColors.headingTextColor : AliStudioColors.white}
+                _hover={{ bg: isScrolled ? AliStudioColors.primary : "#ffffff25", color: isScrolled ? AliStudioColors.white : "" }}
                 bg={
                   activeSection === item.name.toLowerCase()
                     ? isScrolled
-                      ? StargateColors.white
+                      ? AliStudioColors.white
                       : "#ffffff25"
                     : "transparent"
                 }

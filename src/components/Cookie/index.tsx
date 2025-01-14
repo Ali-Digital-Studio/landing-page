@@ -1,15 +1,15 @@
 "use client";
-import { StargateColors } from "#/src/utils/Colors";
+import { AliStudioColors } from "#/src/utils/Colors";
 import useCookieVisibility from "#/src/utils/CookieVisibility";
 import { Button, Flex, Text } from "@chakra-ui/react";
-import React, { FC, useEffect, useState } from "react";
+import React, { FC } from "react";
 
 const Cookie: FC = () => {
-  const [showCookie, setShowCookie] = useCookieVisibility("stargate-cookie");
+  const [showCookie, setShowCookie] = useCookieVisibility("ali-cookie");
 
   return showCookie ? (
     <Flex
-      bg={StargateColors.white}
+      bg={AliStudioColors.white}
       shadow={"lg"}
       rounded={"full"}
       padding={"8px 8px 8px 16px"}
@@ -30,21 +30,21 @@ const Cookie: FC = () => {
       }}
       zIndex={1000}
     >
-      <Text color={StargateColors.grey} fontSize={"small"}>
-        This website uses cookies to enhance your experience.
+      <Text color={AliStudioColors.grey} fontSize={"small"}>
+      Este sitio web utiliza cookies para mejorar su experiencia.
       </Text>
       <Button
         rounded={"full"}
         fontSize={"small"}
         size={"sm"}
-        bg={StargateColors.black}
-        color={StargateColors.white}
+        bg={AliStudioColors.black}
+        color={AliStudioColors.white}
         _hover={{
           opacity: 0.8,
         }}
         px={5}
         onClick={() => {
-          localStorage.setItem("stargate-cookie", "true");
+          localStorage.setItem("ali-cookie", "true");
           setShowCookie(false);
         }}
       >

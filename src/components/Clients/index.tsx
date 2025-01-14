@@ -5,7 +5,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Box, Heading } from "@chakra-ui/react";
 import Sliders from "../Sliders";
 import { ClientImages } from "../../utils/ClientImages";
-import { StargateColors } from "#/src/utils/Colors";
+import { AliStudioColors } from "#/src/utils/Colors";
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -20,7 +20,7 @@ export default function Clients() {
           md: 48,
         }}
         textAlign={"center"}
-        color={StargateColors.headingTextColor}
+        color={AliStudioColors.headingTextColor}
         margin={20}
       >
         Nuestros clientes

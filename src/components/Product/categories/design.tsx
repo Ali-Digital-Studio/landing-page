@@ -1,7 +1,7 @@
 import { Grid } from "@chakra-ui/react";
 import React from "react";
 import { ProductCard } from "../card";
-import { FaLightbulb, FaPaintBrush, FaBook } from "react-icons/fa"; // Nuevos íconos
+import { FaLightbulb, FaPaintBrush, FaBook } from "react-icons/fa"; 
 
 const Design = () => {
   return (

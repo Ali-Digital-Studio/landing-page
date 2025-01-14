@@ -1,5 +1,5 @@
 "use client";
-import { StargateColors } from "#/src/utils/Colors";
+import { AliStudioColors } from "#/src/utils/Colors";
 import { Button, Flex, Heading, Text } from "@chakra-ui/react";
 import React from "react";
 import FooterTopSVG from "./FooterTopSVG";
@@ -21,7 +21,7 @@ const Footer = () => {
       <FooterBg />
       <Flex mt={16} direction={"column"} align={"center"} px={2}>
         <Flex bg={"#ffffff50"} pr={4} rounded={"full"} mb={5}>
-          <Text color={StargateColors.white} fontSize={"xs"}>
+          <Text color={AliStudioColors.white} fontSize={"xs"}>
             <Text
               as="span"
               fontWeight={600}
@@ -69,7 +69,7 @@ const Footer = () => {
       </Flex>
 
       <Flex mt={32}>
-        <Text color={StargateColors.white}>
+        <Text color={AliStudioColors.white}>
           {new Date().getFullYear()} - All rights reserved
         </Text>
       </Flex>

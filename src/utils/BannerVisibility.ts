@@ -1,15 +1,15 @@
 import { useState, useEffect, Dispatch, SetStateAction } from "react";
 
 const useBannerVisibility = (
-  storageKey: string
+  aliStudioKey: string
 ): [boolean, Dispatch<SetStateAction<boolean>>] => {
   const [showBanner, setShowBanner] = useState(false);
 
   useEffect(() => {
-    if (!localStorage.getItem(storageKey)) {
+    if (!localStorage.getItem(aliStudioKey)) {
       setShowBanner(true);
     }
-  }, [storageKey]);
+  }, [aliStudioKey]);
 
   return [showBanner, setShowBanner];
 };

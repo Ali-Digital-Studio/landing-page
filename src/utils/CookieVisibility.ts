@@ -1,15 +1,15 @@
 import { useState, useEffect, Dispatch, SetStateAction } from "react";
 
 const useCookieVisibility = (
-  storageKey: string
+  aliStudioKey: string
 ): [boolean, Dispatch<SetStateAction<boolean>>] => {
   const [showCookie, setShowCookie] = useState(false);
 
   useEffect(() => {
-    if (!localStorage.getItem(storageKey)) {
+    if (!localStorage.getItem(aliStudioKey)) {
       setShowCookie(true);
     }
-  }, [storageKey]);
+  }, [aliStudioKey]);
 
   return [showCookie, setShowCookie];
 };
