@@ -1,5 +1,5 @@
 import { AliStudioColors } from "#/src/utils/Colors";
-import { Flex, Grid, GridItem } from "@chakra-ui/react";
+import { Flex, Grid, GridItem, Heading } from "@chakra-ui/react";
 import React from "react";
 
 const Functions = () => {
@@ -23,7 +23,7 @@ const Functions = () => {
 
   return (
     <Flex
-      id="functions"
+      id="portafolio"
       direction={"column"}
       justify={"center"}
       align={"center"}
@@ -32,6 +32,17 @@ const Functions = () => {
       maxW={1200}
       mx={"auto"}
     >
+      <Heading
+        fontSize={{
+          base: 32,
+          md: 48,
+        }}
+        textAlign={"center"}
+        color={AliStudioColors.headingTextColor}
+        margin={20}
+      >
+        Portafolio
+      </Heading>
       <Grid
         templateRows="repeat(3, 1fr)"
         templateColumns={{

@@ -13,7 +13,7 @@ import "swiper/css/scrollbar";
 
 export default function Clients() {
   return (
-    <Box textAlign="center" mt={-10}>
+    <Box textAlign="center" mt={-10} id="clientes">
       <Heading
         fontSize={{
           base: 32,
