@@ -15,12 +15,12 @@ const FooterBg = () => {
         radial-gradient(circle at 100% -40%, ${baseStyle}), 
         radial-gradient(circle at 50% -60%, ${baseStyle}),
         radial-gradient(circle at 0% -40%, ${baseStyle}),
-        black
+        #1D71BB
         `,
         md: `
         radial-gradient(circle at 100% -50%, ${baseStyle}), 
         radial-gradient(circle at 15% -75%, ${baseStyle}),
-        black
+       #1D71BB
         `,
       }}
     />
