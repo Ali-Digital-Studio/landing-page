@@ -6,9 +6,9 @@ import SummaryLargeImage from "#/public/images/summary_large_image.png";
 import Cookie from "../components/Cookie";
 import Banner from "../components/Banner";
 import Navbar from "../components/Navbar";
-
 import "./globals.scss";
 import Footer from "../components/Footer";
+import WhatsappLive from "../components/whatsapp";
 
 interface LayoutProps {
   children: ReactNode;
@@ -77,6 +77,7 @@ export default function RootLayout({ children }: LayoutProps) {
           <Banner />
           <Navbar />
           {children}
+          <WhatsappLive />
           <Footer />
         </Providers>
       </body>

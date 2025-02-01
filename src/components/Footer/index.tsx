@@ -40,8 +40,8 @@ const Footer = () => {
             </Text>
             <VStack spacing={2} mt={2} fontSize="sm" align="start">
               <Text color="white">Telefono:</Text>
-              <Link href="tel:(###)-###-####" aria-label="Nuestro Telefono" title="Nuestro Telefono" color="gray.300" _hover={{ color: "purple.800" }}>
-                (###)-###-####
+              <Link href="tel:+1(809)-488-5950" aria-label="Nuestro Telefono" title="Nuestro Telefono" color="gray.300" _hover={{ color: "purple.800" }}>
+                +1 (809)-488-5950
               </Link>
               <Text color="white">Correo Electronico:</Text>
               <Link href="mailto:alisocialmediard@gmail.com" aria-label="Nuestro Email" title="Nuestro Email" color="gray.300" _hover={{ color: "purple.800" }}>
