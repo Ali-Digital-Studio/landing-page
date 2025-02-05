@@ -58,7 +58,7 @@ const Footer = () => {
               Redes Sociales
             </Text>
             <Flex mt={2} gap={3}>
-              <Link href="/" color="white" _hover={{ color: "blue.300" }}>
+              <Link href="https://www.linkedin.com/company/ali-studio-rd/" color="white" _hover={{ color: "blue.300" }}>
                 <Icon as={FaLinkedin} h={5} w={5} />
               </Link>
               <Link href="https://www.instagram.com/alistudiord" color="white" _hover={{ color: "orange.400" }}>
